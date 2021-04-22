@@ -407,3 +407,4 @@ void StatisticAnalysis(int score[], int n)
 }
 //张万鑫第一次修改
 //想法：在录入考试课程之后再通过考试课程对应输入各科的成绩
+//张泽晗第一次尝试
