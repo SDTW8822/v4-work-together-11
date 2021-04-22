@@ -405,6 +405,7 @@ void StatisticAnalysis(int score[], int n)
 
     printf("本次成绩情况如下：\n 优秀率：%1f %%\n 良好率：%1f %%\n 及格率： %1f %%  \n不及格率：%1f %% \n", (float)vgod * 100 / n, (float)gods * 100 / n, (float)jige * 100 / n, (float)unjige * 100 / n);
 }
-//张万鑫第一次修改
+//chsnsusdhshefhisofdshs
 //想法：在录入考试课程之后再通过考试课程对应输入各科的成绩
+//张泽晗第一次修改
 //赵世纪第一次修改
