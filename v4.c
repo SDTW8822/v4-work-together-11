@@ -65,7 +65,7 @@ Please enter your choice:*/
 #define MAX_len 10                                                          //最大姓名长度
 #define N 30                                                                //最多学生人数
 #define MAX_css  6                                                          //最多考试科目总数
-void Readscore(int score[], long num[], char name[][MAX_len], int n);		                    /*读入学生学号、姓名和成绩*/
+void Readscore(int score[], long num[], char name[][MAX_len],char prac[][MAX_css], int n);		                    /*读入学生学号、姓名和成绩*/
 void T_Ascore(int n, int score[]);					                            /*计算总成绩和平均成绩*/
 void PrintScore(long num[], int score[], char name[][MAX_len], int n);                           /*打印学号和成绩*/
 void SelectionScore(int num[], int score[], char name[][MAX_len], int n, int (*compare)(int a, int b)); /*函数指针*/
