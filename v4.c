@@ -411,3 +411,4 @@ void StatisticAnalysis(int score[], int n)
 //赵世纪第一次
 //guyguyguyguuyguly
 //啊啊啊啊啊啊啊啊七星高照 ：syntax on ：set number
+//每次修改完标注一下你们修改了哪些地方
