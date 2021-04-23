@@ -285,7 +285,7 @@ void ASsortbynum(long num[], int score[], char name[][MAX_len], int n, int (*nun
 
 
 /*函数功能：按照学号查找成绩信息*/
-void Searchbynum(long num[], char name[][MAX_len], int score[], int n)
+void Searchbynum(long num[], char name[][MAX_len], int score[],char naaaa[], int n)
 
 {
     int i, think, cishu = 0;
