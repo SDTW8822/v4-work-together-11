@@ -410,3 +410,4 @@ void StatisticAnalysis(int score[], int n)
 //张泽晗第一次修改
 //赵世纪第一次
 //guyguyguyguuyguly
+//啊啊啊啊啊啊啊啊七星高照 ：syntax on ：set number
