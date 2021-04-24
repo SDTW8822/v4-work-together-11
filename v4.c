@@ -84,15 +84,22 @@ int main(void)
     int score[N], n, sum, average, c;			                     //变量解释：n是学生人数，sum是学生总成绩，average是学生平均成绩,c是用户功能选项
     int     p;
     long int num[N];
+    int i;
     char prac[MAX_css][MAX_css];
     char name[N][MAX_len];                                         //定义一个输入学生姓名的字符数组
-
+    char(*pr)[MAX_css];
+    pr = prac;
     printf("Please input the total students number:");
     scanf("%d", &n);                                                /*从键盘读入学生人数*/
-    printf("Please input the test number:");
+    printf("Please input the test number:");                        /*从键盘读入需要录入的科目数目*/
     scanf("%d", &p);
-    scanf("%d", &n); 							                                        /*从键盘读入学生人数*/
-    printf("------------------------------------------------------------------------");
+    printf("Please input all of the test name:\n");
+    for (i = 0; i < p; i++,pr++)
+    {
+        scanf("%s", pr);
+    }
+
+    printf("------------------------------------------------------------------------\n");
     printf("1.————Input record\n");                                                     //选项1：输入学生学号、姓名和学生成绩
     printf("2.————Caculate totel and average score of course\n");         //选项2：计算学生总成绩和平均成绩
     printf("3.————Sort in descending order by score\n");                      //选项3：按照成绩由高到低排出名次表
@@ -104,7 +111,7 @@ int main(void)
     printf("9.————Sarch by name \n");                                                  //选项9：按照学生姓名查找成绩信息
     printf("10.———-Sarch by name dictionary \n");                                    //选项10：按照学生姓名字典排序学生成绩
     printf("0.————Exit\n");
-    printf("-------------------------------------------------------------------------");
+    printf("-------------------------------------------------------------------------\n");
     printf("Please enter your choice:\n");
     printf("\n");
     for (;;)
