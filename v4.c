@@ -96,7 +96,7 @@ int main(void)
     printf("Please input all of the test name:\n");
     for (i = 0; i < p; i++,pr++)
     {
-        scanf("%s", pr);
+        scanf("%s", pr);                                            /*通过for循环把考试科目名称存放在二维数组中*/
     }
 
     printf("------------------------------------------------------------------------\n");
@@ -416,3 +416,4 @@ void StatisticAnalysis(int score[], int n)
 }
 
 //每次修改完标注一下你们修改了哪些地方
+//张泽含真帅
