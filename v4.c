@@ -92,17 +92,19 @@ int main(void)
     printf("Please input the test number:");
     scanf("%d", &p);
     scanf("%d", &n); 							                                        /*从键盘读入学生人数*/
-    printf("*************************1.Input record\n");                                                     //选项1：输入学生学号、姓名和学生成绩
-    printf("*************************2.Caculate totel and average score of course\n");         //选项2：计算学生总成绩和平均成绩
-    printf("*************************3.Sort in descending order by score\n");                      //选项3：按照成绩由高到低排出名次表
-    printf("*************************4.Sort in ascending order by score\n");                        //选项4：按照成绩由低到高排出名次表
-    printf("************************5.Sort in ascending order by number\n");                   //选项5：按照学号由低到高排出名次表
-    printf("*************************6.Search by number\n");                                             //选项6：查询学号信息
-    printf("*************************7.Statistic analysis\n");                                               //选项7：统计类别人数以及所占人数比例
-    printf("*************************8.List record\n");                                                       //选项8：输出每个学生的学号考试成绩以及课程总分和平均分
-    printf("*************************.Sarch by name \n");                                                  //选项9：按照学生姓名查找成绩信息
-    printf("*************************.Sarch by name dictionary \n");                                    //选项10：按照学生姓名字典排序学生成绩
-    printf("*************************0.Exit\n");
+    printf("------------------------------------------------------------------------");
+    printf("1.————Input record\n");                                                     //选项1：输入学生学号、姓名和学生成绩
+    printf("2.————Caculate totel and average score of course\n");         //选项2：计算学生总成绩和平均成绩
+    printf("3.————Sort in descending order by score\n");                      //选项3：按照成绩由高到低排出名次表
+    printf("4.————Sort in ascending order by score\n");                        //选项4：按照成绩由低到高排出名次表
+    printf("5.————Sort in ascending order by number\n");                   //选项5：按照学号由低到高排出名次表
+    printf("6.————Search by number\n");                                             //选项6：查询学号信息
+    printf("7.————Statistic analysis\n");                                               //选项7：统计类别人数以及所占人数比例
+    printf("8.————List record\n");                                                       //选项8：输出每个学生的学号考试成绩以及课程总分和平均分
+    printf("9.————Sarch by name \n");                                                  //选项9：按照学生姓名查找成绩信息
+    printf("10.———-Sarch by name dictionary \n");                                    //选项10：按照学生姓名字典排序学生成绩
+    printf("0.————Exit\n");
+    printf("-------------------------------------------------------------------------");
     printf("Please enter your choice:\n");
     printf("\n");
     for (;;)
@@ -128,7 +130,7 @@ int main(void)
             PrintScore(num, score, name, n);
             printf("Please enter your choice:\n");
             break;
-        case 6:Searchbynum(num, name, score, n);
+        case 6:Searchbynum(num,name,score,n);
             printf("Please enter your choice:\n");
             break;
         case 7: StatisticAnalysis(score, n);
@@ -285,7 +287,7 @@ void ASsortbynum(long num[], int score[], char name[][MAX_len], int n, int (*nun
 
 
 /*函数功能：按照学号查找成绩信息*/
-void Searchbynum(long num[], char name[][MAX_len], int score[],char naaaa[], int n)
+void Searchbynum(long num[], char name[][MAX_len], int score[], int n)
 
 {
     int i, think, cishu = 0;
@@ -405,10 +407,5 @@ void StatisticAnalysis(int score[], int n)
 
     printf("本次成绩情况如下：\n 优秀率：%1f %%\n 良好率：%1f %%\n 及格率： %1f %%  \n不及格率：%1f %% \n", (float)vgod * 100 / n, (float)gods * 100 / n, (float)jige * 100 / n, (float)unjige * 100 / n);
 }
-//chsnsusdhshefhisofdshs
-//想法：在录入考试课程之后再通过考试课程对应输入各科的成绩
-//张泽晗第一次修改
-//赵世纪第一次
-//guyguyguyguuyguly
-//啊啊啊啊啊啊啊啊七星高照 ：syntax on ：set number
+
 //每次修改完标注一下你们修改了哪些地方
