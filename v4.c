@@ -384,6 +384,7 @@ void ASsortbynameD(long num[], int score[], char name[][MAX_len], int n)
 
 /*函数功能：计算各个类别的学生成绩状况*/
 
+//HH
 
 
 void StatisticAnalysis(int score[], int n)
@@ -416,4 +417,4 @@ void StatisticAnalysis(int score[], int n)
 }
 
 //每次修改完标注一下你们修改了哪些地方
-//张泽含真帅
+//张万鑫是大牛哇
